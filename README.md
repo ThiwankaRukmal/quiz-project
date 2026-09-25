@@ -107,13 +107,3 @@ Follow these easy steps to run the project locally on your machine using XAMPP:
 | `messages` | Stores submissions received from the contact us form. |
 
 ---
-
-## 📋 Evaluation Criteria Coverage
-
-- **HTML, CSS Layout (20%):** Clean HTML5 semantic layout, custom CSS design system, fully mobile-responsive using Bootstrap 5.
-- **JavaScript Features (15%):** Form validation, dynamic progress bar, interactive image slider, score history toggle, and event handling.
-- **Database Integration (20%):** Robust MySQL integration via `mysqli` with prepared statements.
-- **User Authentication (20%):** Secure signup (`password_hash`), login (`password_verify`), sessions, and logout.
-- **Contact Form & Data Handling (10%):** Form submission and validation saved directly to the database.
-- **Proper File Structure & Submission (5%):** Follows the exact required assignment folder structure.
-- **Documentation (5%):** Complete setup guide, code comments, and demo accounts.
