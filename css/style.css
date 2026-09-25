@@ -1,0 +1,122 @@
+/* ========================================================
+   Theme Styling for Quiz Web Application
+   ICT 2209 - Web Technologies Mini Project
+   ======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary-color: #06b6d4;
+  --bg-light: #f8fafc;
+  --card-bg: #ffffff;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --success-color: #10b981;
+  --danger-color: #ef4444;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hero Carousel */
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.carousel-caption {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 1.25rem 1.75rem;
+}
+
+/* Feature & Action Cards */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Quiz Option Selection Styles */
+.option-label {
+  display: block;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.option-label:hover {
+  border-color: var(--primary-color);
+  background-color: #f5f3ff;
+}
+
+.form-check-input:checked + .option-label {
+  border-color: var(--primary-color);
+  background-color: #e0e7ff;
+  color: #312e81;
+  font-weight: 600;
+}
+
+/* Hide raw radio button but keep accessible */
+.option-radio {
+  display: none;
+}
+
+/* Badges & Stats */
+.badge-custom {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 50px;
+}
+
+/* Form Styles */
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.15);
+}
+
+/* Custom Footer */
+footer {
+  margin-top: auto;
+}
+
+/* Micro animations */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
